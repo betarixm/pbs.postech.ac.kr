@@ -1,0 +1,25 @@
+---
+export interface Props {}
+
+/*
+ * Note. Why 3-cols?
+ * Preparing for outlinks. Each cols are for title, links, and outlinks.
+ */
+---
+
+<header class="sticky bottom-0 w-full bg-black/50 backdrop-blur-xl">
+  <nav class="container">
+    <ul class="grid grid-cols-3">
+      <li class="flex justify-start">
+        <a
+          class="block w-10 h-full py-5 bg-[url('/images/logo.svg')] bg-no-repeat bg-center bg-contain"
+          href="/"></a>
+      </li>
+      <li class="flex justify-center"></li>
+      <li class="flex justify-end gap-4">
+        <a class="py-5 text-white/80" href="/">About</a>
+        <a class="py-5 text-white/80" href="/feed">Feed</a>
+      </li>
+    </ul>
+  </nav>
+</header>
