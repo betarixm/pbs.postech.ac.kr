@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="포항공과대학교 방송국 PBS">
+  <main class="min-h-screen pb-5">
+    <section>
+      <h1 class="container mt-20 mb-4 font-extrabold text-6xl">Feed.</h1>
+      <p class="container mb-10 font-extrabold text-4xl text-white/75">
+        PBS를 톺아보는<br class="md:hidden" /> 새로운 관점.
+      </p>
+      <p class="container">
+        <span class="border px-2 py-1.5 text-xs rounded-md">
+          2022년 겨울 공개
+        </span>
+      </p>
+    </section>
+  </main>
+</Layout>
+
+<style lang="postcss">
+  .link {
+    @apply text-rose-500 text-lg hover:underline;
+  }
+  .link::after {
+    @apply content-["_↗"] align-text-top;
+  }
+</style>
